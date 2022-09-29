@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#Ignore Sanity nodemodules
+sanity-laundry/node_modules
+
 # testing
 /coverage
 
