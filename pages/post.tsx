@@ -4,7 +4,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { sanityClient, urlFor } from '../sanity';
 import { Post } from '../typings';
-import BlogBanner from "../Components/BlogBanner"
+import BlogBanner from "../components/BlogBanner"
 import Footer from '../components/Footer';
 
 interface Props {

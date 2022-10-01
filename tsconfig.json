@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "Components/Hero.js", "pages/about.jsx", "pages/about.jsx"  ],
+, "components/Hero.js", "pages/about.jsx", "pages/about.jsx"  ],
   "exclude": [
     "node_modules"
   ]
