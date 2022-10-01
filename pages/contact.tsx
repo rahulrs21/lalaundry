@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import React from 'react'
-import ContactComp from "../components/ContactComp"
+import ContactComp from '../components/ContactComp'
 import Footer from '../components/Footer';
 
 import Navbar from '../components/Navbar'
