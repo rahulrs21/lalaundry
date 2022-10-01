@@ -182,7 +182,7 @@ function HeroAbout() {
         <div className={showPlayer == false ? `-z-10` : `relative pt-[56.25%] z-10`}>
           {hasWindow && (
             <ReactPlayer
-              url={`https://www.youtube.com/watch?v=Vyor8kv9YiI`}
+              url={`http://www.youtube.com/watch?v=Vyor8kv9YiI`}
               width="100%"
               height="100%"
               style={{ position: "absolute", top: "0", left: "0" }}

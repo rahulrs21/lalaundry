@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import React from 'react'
-import Navbar from '../components/Navbar'
 import ContactComp from "../components/ContactComp"
 import Footer from '../components/Footer';
 
+import Navbar from '../components/Navbar'
 
 
 
@@ -17,7 +17,8 @@ function Contact() {
 
         </Head>
 
-        <Navbar navLogo='/img/Lalundry-logo-white.png'  headerBGColor="transparent" headerTextColor="white" />
+      <Navbar navLogo='/img/Lalundry-logo-white.png'  headerBGColor="transparent" headerTextColor="white" />
+        
 
 
 
