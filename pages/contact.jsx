@@ -3,6 +3,8 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import ContactComp from "../components/ContactComp"
 import Footer from '../components/Footer';
+import Head from "next/head";
+
 
 
 function Contact() {
