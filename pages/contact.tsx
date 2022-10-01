@@ -2,7 +2,7 @@
 
 
 import Head from 'next/head';
-import ContactComp from '../components/ContactComp'
+// import ContactComp from '../components/ContactComp'
 import Footer from '../components/Footer';
 
 import Navbar from '../components/Navbar'
@@ -23,7 +23,7 @@ function contact({}: Props) {
 
 
 
-        <ContactComp />
+        {/* <ContactComp /> */}
         
         <Footer />
     </div>
