@@ -16,8 +16,8 @@ function Pricing() {
         <div className="flex flex-wrap ">
 
           {/* item-1 */}
-          <motion.div initial={{y:100, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration:2}} className="p-4 w-full lg:w-1/3 mx-auto">
-            <div className="h-full bg-gray-100 bg-opacity-75 px-8 py-12 rounded-lg overflow-hidden text-center relative shadow-md cursor-pointer">
+          <motion.div initial={{y:100, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration:2}} className="p-4 w-full lg:w-1/3 mx-auto ">
+            <div className="h-full bg-gray-100 bg-opacity-75 px-8 py-12 rounded-lg overflow-hidden text-center relative shadow-md cursor-pointer hover:bg-gray-100 hover:border-2 transition duration-200 ease-in-out hover:border-blue-400">
               <h2 className="tracking-widest text-lg title-font font-medium text-blue-500 mb-7">
                 Best Price
               </h2>
@@ -51,7 +51,7 @@ function Pricing() {
 
           {/* item-2 */}
           <motion.div initial={{y:100, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration:1}} className="p-4 w-full  lg:w-1/3 ">
-            <div className="h-full bg-gray-100 bg-opacity-75 px-8 py-12 rounded-lg overflow-hidden text-center relative shadow-md border-2 border-blue-400 cursor-pointer">
+            <div className="h-full bg-gray-100 bg-opacity-75 px-8 py-12 rounded-lg overflow-hidden text-center relative shadow-md cursor-pointer hover:bg-gray-100 hover:border-2 transition duration-200 ease-in-out hover:border-blue-400">
               <h2 className="tracking-widest text-lg title-font font-medium text-blue-500 mb-7">
                 Best Price
               </h2>
@@ -85,7 +85,7 @@ function Pricing() {
 
           {/* item-3 */}
           <motion.div initial={{y:100, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{duration:2}} className="p-4 lg:w-1/3 ">
-            <div className="h-full bg-gray-100 bg-opacity-75 px-8 py-12 rounded-lg overflow-hidden text-center relative shadow-md cursor-pointer">
+            <div className="h-full bg-gray-100 bg-opacity-75 px-8 py-12 rounded-lg overflow-hidden text-center relative shadow-md cursor-pointer hover:bg-gray-100 hover:border-2 transition duration-200 ease-in-out hover:border-blue-400 ">
               <h2 className="tracking-widest text-lg title-font font-medium text-blue-500 mb-7">
                 Affordable Price
               </h2>
@@ -96,7 +96,7 @@ function Pricing() {
               </div>
 
               <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                Dry Cleaning & Ironed laundry
+                Dry Cleaning & Iron laundry
               </h1>
                 <div className="leading-relaxed mb-3 flex flex-col items-center space-y-3">
 

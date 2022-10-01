@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import { sanityClient, urlFor } from '../sanity';
 import { Post } from '../typings';
 import BlogBanner from "../Components/BlogBanner"
+import Footer from '../components/Footer';
 
 interface Props {
   posts: [Post];
@@ -21,9 +22,9 @@ function blog({posts}: Props) {
 
         </Head>
 
-        <Navbar navLogo='/img/laundry-logo-white-small.png' navColor='white' />
-
-        <BlogBanner />
+        <Navbar navLogo='/img/Lalundry-logo-white.png'  headerBGColor="transparent" headerTextColor="white" />
+      
+          <BlogBanner />
         
 
         {/* posts */}
@@ -45,6 +46,9 @@ function blog({posts}: Props) {
           ))}
 
         </div>
+
+
+        <Footer />
 
     </div>
   )

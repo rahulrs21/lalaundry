@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       {/* {(typeof window !== 'undefined') &&
         <Navbar/>
       } */}
-      <Navbar navLogo='/img/laundry-logo-white-small.png' navColor='white'  />
+      <Navbar navLogo='/img/Lalundry-logo-white.png'  headerBGColor="transparent" headerTextColor="white" />
       <main className="">
         <section className='snap-start'>
           <Hero />

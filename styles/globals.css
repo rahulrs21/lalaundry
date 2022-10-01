@@ -1,3 +1,5 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +11,6 @@
     }
 }
 
-.scrollbarColor {
-    scrollbar-color: blue
-}
-
 .header {
     position: fixed;
     height: 90px;
@@ -22,12 +20,13 @@
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color: transparent;
+    /* background-color: transparent; */
+    z-index: 99;
 }
 
-.header-bg {
+/* .header-bg {
     background-color: rgba(10, 4, 99, 0.9);
-}
+} */
 
 .header .navbar {
     display: flex;
@@ -39,7 +38,9 @@
     padding: 0 1rem;
 }
 
-
+/* .header .nav-menu a {
+    color: #ffffff;
+} */
 
 .header .navbar img {
     width: 250px;
@@ -78,6 +79,7 @@
     .header .nav-menu a {
         color: #ffffff;
     }
+
 
     .hamburger {
         display: block;

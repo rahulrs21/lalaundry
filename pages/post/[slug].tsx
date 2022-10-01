@@ -8,6 +8,7 @@ import { Post } from "../../typings";
 
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
+import Footer from "../../components/Footer";
 
 interface IFormInput {
     _id: string;
@@ -49,11 +50,11 @@ function Post({post}: Props) {
         <link rel="icon" href="/img/laundry-logo-white-small.png" />
     </Head>
     <main>
-        <Navbar navLogo='/img/laundry-logo-white-small.png' navColor='white' /> 
+        <Navbar navLogo='/img/laundry-logo.png'  headerBGColor="transparent" headerTextColor="black" />
 
         
 
-        <img className="w-full h-40 xl:h-72 object-cover shadow-md rounded-b-3xl" src={urlFor(post.mainImage).url()!} alt="" />
+        <img className="w-full h-40 xl:h-72 object-cover shadow-md rounded-b-3xl opacity-50" src={urlFor(post.mainImage).url()!} alt="" />
 
         <article className='max-w-3xl mx-auto p-5'>
           <h1 className='text-3xl mt-10 mb-3'>{post.title}</h1>
@@ -132,7 +133,7 @@ function Post({post}: Props) {
 
             <label className='block mb-5'>
               <span className='text-gray-700'>Name</span>
-              <input {...register("name", { required: true } )}  className='shadow border rounded py-2 px-3 form-input mt-1 block w-full outline-blue-500' placeholder='John Doe' type="text" />
+              <input {...register("name", { required: true } )}  className='shadow border rounded py-2 px-3 form-input mt-1 block w-full outline-blue-500' placeholder='Enter your name' type="text" />
             </label>
 
             <label className='block mb-5'>
@@ -182,6 +183,8 @@ function Post({post}: Props) {
         
        
     </main>
+
+    <Footer />
     </>
   )
 }
