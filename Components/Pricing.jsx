@@ -24,7 +24,7 @@ function Pricing() {
 
               <div className="flex flex-col my-2 items-center">
 
-                <img src="https://img.freepik.com/premium-photo/laundry-basket-blurred-background-modern-washing-machine_488220-17518.jpg?w=996" className="h-20 w-20 rounded-full " alt="" />
+                <img src="/img/price1.png" className="h-20 w-20  " alt="" />
               </div>
 
               <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
@@ -58,7 +58,7 @@ function Pricing() {
 
               <div className="flex flex-col my-2 items-center">
 
-                <img src="https://img.freepik.com/premium-photo/laundry-basket-blurred-background-modern-washing-machine_488220-17518.jpg?w=996" className="h-20 w-20 rounded-full " alt="" />
+                <img src="/img/price2.png" className="h-20 w-20 " alt="" />
               </div>
 
               <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
@@ -92,7 +92,7 @@ function Pricing() {
 
               <div className="flex flex-col my-2 items-center">
 
-                <img src="https://img.freepik.com/premium-photo/laundry-basket-blurred-background-modern-washing-machine_488220-17518.jpg?w=996" className="h-20 w-20 rounded-full " alt="" />
+                <img src="/img/price3.png" className="h-20 w-30 " alt="" />
               </div>
 
               <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">

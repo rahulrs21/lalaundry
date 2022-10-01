@@ -1,4 +1,7 @@
 import React from "react";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function ContactComp() {
   return (
@@ -104,6 +107,21 @@ function ContactComp() {
               <p className="text-xs text-center text-gray-500 mt-3">
                     You may also call us at 333-33-33
               </p>
+
+              {/* Social Icons */}
+            <div className="flex space-x-3 mx-auto my-4">
+                <div className="h-10 w-10 rounded p-4 bg-blue-500 flex justify-center items-center text-white cursor-pointer hover:bg-blue-600">
+                    <a href="#" className="text-white" target="_blank" rel="noopener noreferrer" ><FacebookIcon /></a>
+                </div>
+                <div className="h-10 w-10 rounded p-4 bg-blue-500 flex justify-center items-center text-white cursor-pointer  hover:bg-blue-600">
+                    <a href="#" className="text-white" target="_blank" rel="noopener noreferrer" ><InstagramIcon /></a>
+                </div>
+                <div className="h-10 w-10 rounded p-4 bg-blue-500 flex justify-center items-center text-white cursor-pointer  hover:bg-blue-600">
+                    <a href="#" className="text-white " target="_blank" rel="noopener noreferrer" ><LinkedInIcon /></a>
+                </div>
+            </div>
+              
+
             </div>
           </div>
         </section>

@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { useCallback } from "react";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Link from 'next/link';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 
 
@@ -53,6 +54,7 @@ const Navbar = ({navLogo,headerBGColor, headerTextColor}) => {
     const closeMenu = () => setClick(false)
 
     return (
+        <>
         <div className={scrollY ? `header bg-[#0a0463e6]  text-white` : `header bg-${headerBGColor} text-${headerTextColor}`} >
             <nav className='navbar'>
                 <Link href='/' className='logo'>
@@ -91,7 +93,23 @@ const Navbar = ({navLogo,headerBGColor, headerTextColor}) => {
                     </li>
                 </ul>
             </nav>
+
+            <div className={scrollY ? 'inline-block ' : 'hidden'}>
+                <div className='fixed z-500 bottom-3 right-3 ursor-pointer'>
+                    <div className='h-10 w-10 bg-blue-300 rounded-full text-white flex justify-center items-center'>
+                        {/* <button onClick="#"><ArrowUpwardIcon onClick="#" /></button> */}
+                        <a href="#"><ArrowUpwardIcon /></a>
+                    </div>             
+                </div>
+            </div>
+
+
         </div>
+    
+
+        
+
+        </>
     )
 }
 
