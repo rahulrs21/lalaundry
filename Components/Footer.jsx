@@ -60,8 +60,7 @@ function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <div className="flex flex-col space-y-1 ">
-                <a href="#" className="hover:text-white" target="_blank">Business Bay, Dubai</a>
-                <a href="#" className="hover:text-white" target="_blank">United Arab Emirates</a>
+                <a href="#" className="hover:text-white" target="_blank">Business Bay, Dubai - United Arab Emirates</a>
                 <a href="#" className="hover:text-white" target="_blank">info@lalaundry.ae</a>
               
               </div>

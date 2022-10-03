@@ -32,7 +32,7 @@ export default function Example() {
                     </div>   
                     
                 </AccordionHeader>
-                <AccordionBody className="py-3 md:py-0 md:text-lg">
+                <AccordionBody className="py-4 md:py-0 md:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima dolore velit sit repellat explicabo, mollitia voluptatum, alias ea rem veniam sunt quo cum ipsum expedita maxime odio eius. Eligendi, reprehenderit!
                 </AccordionBody>
             </Accordion>
@@ -47,7 +47,7 @@ export default function Example() {
                     {open === 2 ? <span className="inline-block text-3xl text-blue-500 mt-8 mb-6">-</span> : <span className="inline-block text-3xl text-blue-500 mt-8 mb-6">+</span>  }
                 </div> 
                 </AccordionHeader>
-                <AccordionBody className="py-3 md:py-0 md:text-lg">
+                <AccordionBody className="py-4 md:py-0 md:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum labore nostrum perferendis corrupti nulla dolorem officia! Sapiente, nam delectus!
                 </AccordionBody>
             </Accordion>
@@ -63,7 +63,7 @@ export default function Example() {
                 
                 
                 </AccordionHeader>
-                <AccordionBody className="py-3 md:py-0 md:text-lg">
+                <AccordionBody className="py-4 md:py-0 md:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum labore nostrum perferendis corrupti nulla dolorem officia! Sapiente, nam delectus!
                 </AccordionBody>
             </Accordion>

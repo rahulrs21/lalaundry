@@ -86,7 +86,7 @@ const Navbar = ({navLogo,headerBGColor, headerTextColor}) => {
                         <Link href='/post'><a onClick={closeMenu}>Blogs</a></Link>
                     </li>
                     <li className='nav-item'>
-                        <Link href='/'><a onClick={closeMenu}>Contact</a></Link>
+                        <Link href='/contact'><a onClick={closeMenu}>Contact</a></Link>
                     </li>
                     <li className='nav-item'>
                         <button className='p-3 rounded-md bg-blue-600 hover:bg-blue-800 hover:scale-105 duration-200 text-white'><a href='#demo' onClick={closeMenu}><LocalPhoneIcon /> Call Now</a></button>
