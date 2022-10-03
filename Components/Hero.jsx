@@ -39,7 +39,7 @@ function Hero() {
               alt="No Img" 
            />
            <motion.div initial={{x:-100, opacity: 0}} whileInView={{x:0, opacity: 1}} transition={{duration:1}} className='absolute top-[30%] left-[5%] md:left-[10%]'>
-            <div className='max-w-sm xl:max-w-lg text-left text-white'>    
+            <div className='max-w-sm md:max-w-md  xl:max-w-3xl text-left text-white'>    
               <h1 className='text-2xl text-white font-bold md:text-4xl lg:text-5xl  text-left tracking-wide pb-4'>Solution for Your Dirty Clothes</h1>
               <p>Our experts, with the help of our state of art machinery ensure that your clothes come back looking clean, tidier and fresh every time </p>
               <button className='p-5 bg-blue-800 my-5 hover:bg-blue-900'>Explore Now</button>
@@ -58,7 +58,7 @@ function Hero() {
             />
 
            <motion.div initial={{x:-100, opacity: 0}} whileInView={{x:0, opacity: 1}} transition={{duration:1}} className='absolute top-[30%] left-[5%] md:left-[10%]'>
-            <div className='max-w-sm xl:max-w-lg text-left text-white'>    
+            <div className='max-w-sm md:max-w-md  xl:max-w-3xl text-left text-white'>    
               <h1 className='text-2xl text-white font-bold md:text-4xl lg:text-5xl  text-left tracking-wide pb-4'>Solution for Your Dirty Clothes</h1>
               <p>Our experts, with the help of our state of art machinery ensure that your clothes come back looking clean, tidier and fresh every time </p>
               <button className='p-5 bg-blue-800 my-5 hover:bg-blue-900'>Explore Now</button>
@@ -76,9 +76,9 @@ function Hero() {
           </div>
             <div className='flex justify-around '>
               <motion.div initial={{x:-100, opacity: 0}} whileInView={{x:0, opacity: 1}} transition={{duration:1}} className='absolute top-[30%] left-[5%] md:left-[10%]'>
-                <div className='max-w-sm xl:max-w-lg text-left text-white relative z-10'>    
-                  <h1 className='text-2xl text-white font-bold md:text-4xl lg:text-5xl  text-left tracking-wide pb-4'>Solution for Your Dirty Clothes</h1>
-                  <p>Our experts, with the help of our state of art machinery ensure that your clothes come back looking clean, tidier and fresh every time </p>
+                <div className='max-w-[18rem] md:max-w-md xl:max-w-4xl text-left text-white relative z-10'>    
+                  <h1 className='text-2xl text-white font-bold md:text-4xl lg:text-5xl  text-left tracking-wide pb-4'>Plan your day with ease</h1>
+                  <p className=''>We take care about cleanliness of your cloth. </p>
                   <button className='p-5 bg-blue-800 my-5 hover:bg-blue-900'>Explore Now</button>
                 </div>
               </motion.div>
