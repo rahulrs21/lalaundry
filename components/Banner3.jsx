@@ -40,12 +40,13 @@ function Banner3() {
             <div>
 
                 <motion.img  
-                    src='https://prod-cdn.laundryheap.com/assets/landing/benefits/2_2x-525b9e1898bb7bbbdf329aead2f52721a74611f01cd6181b32365c9f69a12237.jpg'
+                    // src='https://prod-cdn.laundryheap.com/assets/landing/benefits/2_2x-525b9e1898bb7bbbdf329aead2f52721a74611f01cd6181b32365c9f69a12237.jpg'
+                    src="/img/Banners-Image-Home-3.png"
                     initial={{x: -200, opacity: 0}}
                     whileInView={{x: 0, opacity: 1}}
 
                     transition={{duration: 1.2}}
-                    className="-mb-5 md:mb-0 py-2 flex-shrink-0 w-72 object-contain rounded-lg md:w-80 lg:mt-16 lg:w-[400px] xl:w-[600px] 2xl:w-[850px] scrollbar-hide"
+                    className="-mb-5 md:mb-0 py-2 flex-shrink-0 w-80 object-contain rounded-lg md:w-96 lg:mt-16 lg:w-[400px] xl:w-[600px] 2xl:w-[850px] scrollbar-hide"
 
                 />
             </div>

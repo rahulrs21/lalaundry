@@ -16,7 +16,8 @@ function Banner2() {
                 <div>
 
                     <motion.img  
-                    src='https://prod-cdn.laundryheap.com/assets/landing/benefits/1_2x-c4578394b25c49969b482be2aae2925ae0e07f475bbfeb5eac48c581a2f4a21f.jpg'
+                    // src='https://prod-cdn.laundryheap.com/assets/landing/benefits/1_2x-c4578394b25c49969b482be2aae2925ae0e07f475bbfeb5eac48c581a2f4a21f.jpg'
+                    src="/img/Banners-Image-Home-2.png"
                     initial={{x: -200, opacity: 0}}
                     whileInView={{x: 0, opacity: 1}}
                     // whileHover={{x:20}}
