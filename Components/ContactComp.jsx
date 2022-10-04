@@ -2,9 +2,34 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 function ContactComp() {
+  const form = useRef();
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ful36co', 'template_21z98i4', form.current, 'c66Xz0UkzQX-sGOAW')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Success")
+          setSubmitted(true)
+      }, (error) => {
+          console.log(error.text);
+          console.log("Falied")
+          setSubmitted(false)
+      });
+      e.target.reset()
+  };
+
+
   return (
+
     <div>
       <div className="w-full h-[40vh] bg-blue-400 flex flex-col justify-center relative top-20 md:top-0 items-center text-white">
         <img src="/img/pattern.png" alt="" className="hidden md:inline-block absolute inset-0 top-20 sm:top-0 object-contain opacity-30" />
@@ -67,43 +92,61 @@ function ContactComp() {
               <p className="leading-relaxed mb-5 text-gray-600">
                 We are here to answer any questions you may have about us. Reach out to us and we’ll respond as soon as we can.
               </p>
-                 <span className="inline-block h-1 w-10 rounded bg-blue-500  mb-6"></span>
+              <span className="inline-block h-1 w-10 rounded bg-blue-500  mb-6"></span>
 
-                 
-              <div className="relative mb-4">
-                <label className="leading-7 text-sm text-gray-600">Name</label>
-                <input
-                placeholder="Enter your Name"
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <div className="relative mb-4">
-                <label className="leading-7 text-sm text-gray-600">Email</label>
-                <input
-                  placeholder="Enter your Email"
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <div className="relative mb-4">
-                <label className="leading-7 text-sm text-gray-600">
-                  Message
-                </label>
-                <textarea
-                placeholder="Write your message"
-                  id="message"
-                  name="message"
-                  className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                ></textarea>
-              </div>
-              <button className="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-                Submit
-              </button>
+              {submitted ? (
+                <div className="flex flex-col p-10 my-10 bg-blue-500 text-white max-w-2xl mx-auto">
+                    <h3 className="text-3xl font-bold">Message Submitted Successfully!</h3>
+                </div>
+              ) : (
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className="relative mb-4">
+                    <label className="leading-7 text-sm text-gray-600">Name</label>
+                    <input
+                    placeholder="Enter your Name"
+                      type="text"
+                      id="name"
+                      name="user_name"
+                      className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div className="relative mb-4">
+                    <label className="leading-7 text-sm text-gray-600">Email</label>
+                    <input
+                      placeholder="Enter your Email"
+                      type="email"
+                      id="email"
+                      name="user_email"
+                      className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div className="relative mb-4">
+                    <label className="leading-7 text-sm text-gray-600">
+                      Message
+                    </label>
+                    <textarea
+                    placeholder="Write your message"
+                      id="message"
+                      name="message"
+                      className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    ></textarea>
+
+                  </div>
+                  <button type='submit' className="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                    Submit
+                  </button>
+                </form> 
+              )}
+              
+
+              {/* {contactSend && (
+                <div className='bg-blue-400'>
+                  <p className='text-white text-xl'>Message Submitted Successfully!</p>
+                </div>
+              )} */}
+              
+
+
               <p className="text-xs text-center text-gray-500 mt-3">
                     You may also call us at 333-33-33
               </p>
