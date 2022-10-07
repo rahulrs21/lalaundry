@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Card() {
   return (
-    <div className="p-3 md:p-5 mb-12 bg-white relative top-8 md:top-24 max-w-sm md:max-w-3xl lg:max-w-5xl rounded-lg mx-auto shadow-lg">
+    <div className="p-3 md:p-5 mb-12 bg-white relative top-8 md:top-24 xl:top-32 max-w-sm md:max-w-3xl lg:max-w-5xl rounded-lg mx-auto shadow-lg">
       <div className=" ">
         <div className="flex justify-evenly items-start ">
           <div className="flex flex-col justify-center items-center">

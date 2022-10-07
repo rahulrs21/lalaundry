@@ -105,7 +105,7 @@ function HeroAbout() {
           <a>
             <img
               className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full hover:bg-blue-300/50"
-              src="https://img.freepik.com/free-photo/man-holding-pile-clean-clothes_23-2149117027.jpg?w=2000&t=st=1664539449~exp=1664540049~hmac=14dda0d1da5477d951c8d95c43a5ac33bbb755690d654c921716b471e7ebb9a1"
+              src="/img/aboutBanner.jpg"
               alt=""
             />
           </a>
@@ -162,11 +162,11 @@ function HeroAbout() {
 
       {/* Bg Overlay */}
       {showPlayer && (
-        <div className="absolute inset-0 bg-black opacity-50 h-full w-full z-50" onClick={() => setShowPlayer(false)} />
+        <div className="fixed inset-0 bg-black opacity-50 h-full w-full z-50" onClick={() => setShowPlayer(false)} />
       )}
 
       <div
-        className={`absolute top-40 inset-x-[7%] md:inset-x-[13%] rounded overflow-hidden transition duration-100 ${
+        className={`fixed top-24 inset-x-[7%] md:inset-x-[13%] rounded overflow-hidden transition duration-100 ${
           showPlayer ? "opacity-100 z-50" : "opacity-0 "} transform translate-y-1/2 sm:translate-y-0`}
       >
         <div className="flex items-center justify-between bg-blue-800 text-white p-3.5 ">
@@ -183,6 +183,7 @@ function HeroAbout() {
           {hasWindow && (
             <ReactPlayer
               url={`http://www.youtube.com/watch?v=Vyor8kv9YiI`}
+              // url={`http://www.youtube.com/watch?v=dCGAJHwJfgw`}
               width="100%"
               height="100%"
               style={{ position: "absolute", top: "0", left: "0" }}
